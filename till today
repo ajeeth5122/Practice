@@ -1,118 +1,296 @@
-  //1) Write a JavaScript program to concatenate three strings ”Welcome”, ”to”,
+// var a = 5;
+// console.log(a);
+
+// var a = "hello";
+// console.log(a);
+// a ="world"; console.log(a);
+
+// let b = 10;
+// console.log(b);
+
+// let c = 15;
+// c = 20;
+// console.log(c);
+
+// const subject = "JavaScript";
+// console.log(subject);
+
+// let topic = "Iam Learning JavaScript";
+// console.log(topic);
+
+// // topic = "this is an Error"
+// // console.error(topic);
+
+// // topic ="This is a Warning"
+// // console.warn(topic);
+
+// // topic ="Welcome"
+// // alert(topic);
+
+// // topic = prompt("Enter your User name")
+// // console.log(topic);
+
+// let d = 25;
+// console.log(typeof(d));
+
+// d = "Hello"
+// console.log(typeof(d));
+
+// d = true;
+// console.log(typeof(d));
+
+// let e;
+// console.log(typeof(e));
+
+// topic = prompt("Enter email");
+// console.log(topic);
+
+// console.clear();
+
+//JS
+
+
+    // What is an array in JavaScript? Provide an example from the code.
+
+   //  let Fruits =["apple","berry","orange","pome"];
+
+
+    //Whatwill console.log(fruit[0]) output if fruit = ["apple","berry","orange","pome"]?
+
+   //  console.log(Fruits[0]);
+
+
+    // What will console.log(fruit[fruit.length-1]) output for the fruit array?
+
+   //   console.log(Fruits[Fruits.length-1]); 
+
+
+     // How do you access the last element of an array using its length property?
+
+   //   console.log(Fruits[Fruits.length-1]);
+
+
+     // What is an object in JavaScript? Provide an example from the code.
+     
+   //   let Bike = {
+   //      Bajaj: "Black",
+   //      Suzuki : "Red", 
+   //      Hero : "Blue"
+   //   }
+
+     // Whatwill console.log(Bike.Suzuki) output if Bike = { Bajaj: "Black", Suzuki : "Red", Hero : "Blue" }
+
+   //   console.log(Bike.Suzuki);
+
+     //How do you access the Hero property from the Bike object?
+
+   //   console.log(Bike.Hero);
+
+     //What does the + operator do in JavaScript? Show an example from the code.
+
+   //   let CashPrize= 100;
+   //   let Salary = 500;
+
+   //   let total = CashPrize + Salary;
+
+   //   console.log(total);
+
+     // What is the result of console.log(1-2) based on the code?
+
+   //   CashPrize = total-Salary;
+
+   //   console.log(CashPrize);
+
+     //What does the ** operator do? What will console.log(3**2) output?
+
+   //   let Number = 200;
+   //   let SquareRoot = Number**2;
+   //   console.log(SquareRoot);
+
+     //What is the difference between post-increment (x++) and pre-increment (++x)?
+
+   //   let x = 20;
+   //   let y = ++x;
+
+   //   console.log(y);
+     
+   //   let a = 25;
+   //   let z = a++ + ++a;
+
+   //   console.log(z);
+
+      //What will let num = 10; num = ++num; console.log(num); output?
+      //Answer 11
+      // let num = 10;
+      // num = ++num;
+
+      // console.log(num);
+
+      //In the code let num1 = 10; let num2 = num1++; console.log(num2);, what is the value of num2?
+      //answer 10
+
+      // let Num1 = 10;
+      // let Num2 = Num1++;
+      // console.log(Num2);
+
+      //What does the += assignment operator do? Show an example from the code.
+
+      // let ramesh = 500;
+      // let suresh = 600
+      
+      // ramesh += suresh;
+      
+      // console.log(ramesh);
+
+      // What will let age1 = 20; age1 += 20; console.log(age1); output?
+      //answer 40
+
+      // let age1 = 20;
+      // age1 += 20;
+      
+      // console.log(age1);
+
+      //What is the difference between == and === operators in JavaScript?
+      // == Compare only Values with Values
+      //=== Compare Both Values and its Datatype
+
+      //What will console.log(5==="5") output?
+      // Answer False
+      
+      // console.log(5==="5");
+
+      //What does the logical AND (&&) operator do? Provide an example.
+
+      // Logical && operators compare the Two Two Statements.
+      // if both are true it becomes True
+      // If one statement Faild It becomes False
+
+      // What will console.log((5>=5) && !(5=="5")) output?
+      // Answer False
+
+      // console.log((5>=5) && !(5=="5"));
+
+      // What will console.log((5!="5") || !(5!=5)) output?
+      //Answer True
+      // console.log((5!="5") || !(5!=5));
+
+      console.clear();
+
+      //1) Write a JavaScript program to concatenate three strings ”Welcome”, ”to”,
       //and ”JavaScript” with spaces between them and log the result.
 
-      let a = "welcome"
-      let b = "to"
-      let c = "Javascript"
+      // let a = "welcome"
+      // let b = "to"
+      // let c = "Javascript"
 
-      let d = a + b +c ; 
-      console.log(d);
+      // let d = a + b +c ; 
+      // console.log(d);
       
-      let d = `${a} ${b} ${c}`;
-      console.log(d);
-      console.log(typeof(d));
+      // let d = `${a} ${b} ${c}`;
+      // console.log(d);
+      // console.log(typeof(d));
       
      // 2. Create a string by concatenating a variablename = ”Alice” with the string
      // ” loves coding”and log the output.
 
-      let name = "Alice"
-      let hobby = "loves Coding"
+      // let name = "Alice"
+      // let hobby = "loves Coding"
 
-      let favorite = `${name} ${hobby}`;
+      // let favorite = `${name} ${hobby}`;
 
-      console.log(favorite);
+      // console.log(favorite);
 
       //3. Combine two strings ”JavaScript” and ”is fun” using the + operator
       //and add anexclamation mark at the end.
 
-      let subject = "JavaScript";
-      let reaction= "is fun";
+      // let subject = "JavaScript";
+      // let reaction= "is fun";
 
-      let output = subject +" "+ reaction +"!";
+      // let output = subject +" "+ reaction +"!";
 
-      console.log(output);
+      // console.log(output);
 
 
       //4.Write a program to concatenate a number 42 with the string ” is the
        // answer” and log the result.
 
-      let num = 42;
-      let result = num +" "+"is the answer";
+      // let num = 42;
+      // let result = num +" "+"is the answer";
 
-      console.log(result);
+      // console.log(result);
 
       //5. Using template literals, create a string that includes variables num1 = 10
       //and num2 = 20 in the format ” Sum: 10 + 20 = 30”.
 
-      let num1 = 10;
-      let num2 = 20;
+      // let num1 = 10;
+      // let num2 = 20;
 
-       let num3 = 10+20;
+      //  let num3 = 10+20;
 
-      let sum = `sum:${num1}+${num2}=${num1+num2}`;
+      // let sum = `sum:${num1}+${num2}=${num1+num2}`;
 
-      console.log(sum)
+      // console.log(sum)
 
       //6. Write a template string to display ”Area of rectangle: 50” using vari
       //ables length = 10andwidth = 5
 
-      let len = 10;
-      let wid = 5;
+      // let len = 10;
+      // let wid = 5;
 
-      let ans = `Area of Rectangle : ${len*wid}`;
+      // let ans = `Area of Rectangle : ${len*wid}`;
 
-      console.log(ans);
+      // console.log(ans);
 
       //7. Create a template string that includes a variable user = ”Bob” in the //
       //sentence ”Hello, Bob! Welcome back.”.
 
-      let user = "Bob"
+      // let user = "Bob"
 
-      let sentence= `Hello, ${user}! Welcome Back `
+      // let sentence= `Hello, ${user}! Welcome Back `
 
 
-      console.log(sentence);
+      // console.log(sentence);
 
       //8. Use a template literal to log the result of num1 * num2 where num1 = 15
       //and num2 = 3.
 
-      let num4 =15
-      let num5 =3
+      // let num4 =15
+      // let num5 =3
 
-      let ans1=`${num4*num5}`;
+      // let ans1=`${num4*num5}`;
 
-      console.log(ans1);
+      // console.log(ans1);
 
       //9. Predict the output and type of ”5” + 10. Explain why.
       //Solu:
        //   output = 510 type = String
         //  explanation- anything with a String is String
 
-      let x = "5"
-      let y = 10;
+      // let x = "5"
+      // let y = 10;
 
-      let z = x+y; 
-      console.log(z);
-      console.log(typeof(z));
+      // let z = x+y; 
+      // console.log(z);
+      // console.log(typeof(z));
 
       //10. What is the result of true + ”10”? Log the type and value.
       //Solu:
-      let s = true
-      let t = "10"
-      let str = s+t;
+      // let s = true
+      // let t = "10"
+      // let str = s+t;
 
-      console.log(str);
-      console.log(typeof(str));
+      // console.log(str);
+      // console.log(typeof(str));
       
       //11. Write a program to explicitly convert the string ”123” to a number and
       //add 50 to it.
 
-      let m = "123"
-      let n = 50
+      // let m = "123"
+      // let n = 50
 
-      let o = m + n;
+      // let o = m + n;
 
-      console.log(o);
+      // console.log(o);
       
       //Determine the output of Boolean(”hello”) and Boolean(””). Explain
       //the difference.
@@ -205,7 +383,7 @@
          while(AR<=15);
 
       //20. Write a for-of loop to iterate over an array [10, 20, 30, 40] and log
-      each element multiplied by 2
+      //each element multiplied by 2
 
          let GK =[10,20,30,40,50]
 
