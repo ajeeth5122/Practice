@@ -503,3 +503,155 @@
    }
    sub(200,20,balance)
    // sub(aj,bj,balance)
+
+    //What is the purpose of currying in the add3 function,and how does it differ
+   // from the add2 function in terms of function invocation?
+
+   //example:-
+
+    function add2(x,y,z) {
+       console.log(x*y/z)    // here we are calling a single function with 3 arguments 
+    }
+
+    add2(5,10,2)
+      
+    function add3(x) {
+       return function (y) {
+         return function (z) {
+             console.log(x*y/z) 
+          }                      //here we are calling the parent func with the two child function's
+                                 // by providing seperate arguments for the each functions 
+         }
+      
+    }
+   add3(5)(10)(2)
+
+   //Explain how the Immediately Invoked Function Expression( IIFE)works in
+   // JavaScript, and provide an example of its practical use case.
+
+   // (function(a,b){
+   //    console.log(a**b)   commented for it should be only perform in the begining 
+   // })
+   
+   //(5,6)
+
+   //here we should not use variable name for this function, since invokes automatically fetch the 
+   //arguments and perform.
+
+      
+
+  // What is the role of the yield keyword in a generator function, and how
+  // does it affect the behavior of the genFun function?  
+  
+  //example:-
+
+  function*Generate(){
+   yield "Dragonball"
+   yield "Heman"
+   yield "Avathar"
+   yield "Ben10"
+  }
+  let data = Generate()
+
+  console.log(data.next().value)
+  console.log(data.next().value)
+  console.log(data.next().value)
+  console.log(data.next().value)
+  console.log(data.next().value);
+
+  //solu: here Yield plays a vital role to store the next available data in the variable
+ 
+  
+//How would you convert the curried add3 function into an uncurried function, and 
+// what would be the benefit of doing so?
+
+//curried function;-
+  
+   // function add3(x) {
+   //     return function (y) {
+   //       return function (z) {
+   //           console.log(x*y/z) 
+   //        }                      
+   //       }
+      
+   //  }
+  // add3(5)(10)(2)
+
+  //uncurried function;-
+
+  let add4 = (a,b,c)=>{
+   return a*b/c
+  }
+      
+  let calculate= add4(5,10,2)
+
+  console.log(calculate);
+
+  // in uncurried func it is simple to assign a arguments to a params since it s a single function
+
+
+  // In the fruits array,why is fruits [1] undefined, and how can you handle such gaps in an array?
+  
+  let fruits =["apple",,"orange","grapes"];
+  
+  console.log(fruits[1]);
+
+  // here there is an empty space found in the array  
+ 
+  //Describe the difference between homogeneous and heterogeneous data structures, 
+  // using the fruits array as an example.
+  
+  let fruits1 =["apple","orange","grapes"];
+
+
+  // homogeneous - in array we can store a same datatype entirely hence this is called homogeneous
+    
+     let fruits2 =["apple","orange","grapes",{ename:"aj"},["work","FED"] ] ;  
+
+      // console.log(fruits2[3]);
+  // heterogeneous - in array we can store a different datatype, hence this is called heterogeneous    
+
+   
+   //How can you access the nested malayalam property in the userProfile . levelOfLaunguage  object, 
+   //and what does it return?
+
+   
+   let userprofile ={
+      EmpName: "Thanos",
+      age: "29",
+      languagesknown :["tamil","English","malayalam"],
+   
+      levelOfLaunguage : {
+         tamil:"Expert",
+         English:"Medium",
+         malayalam: "Average"
+      },
+   }
+
+      console.log(userprofile.levelOfLaunguage.malayalam); // it returns the value side of the selected key
+      
+      
+      //What happens when you call storeGen.next() after all values in the genFun generator have been yielded
+
+      //solu:- it becomes undefined,when you call storeGen.next()after all values in the funtion was called,   
+
+
+      //Using the user Profile object,demonstrate how to invoke the complete Training method 
+      // and explain its output.
+
+      let userprofile1 ={
+      EmpName: "Thanos",
+      age: "29",
+      languagesknown :["tamil","English","malayalam"],
+   
+      levelOfLaunguage : {
+         tamil:"Expert",
+         English:"Medium",
+         malayalam: "Average"
+      },
+      completeTrainingmethod : function () {
+         console.log("Certified")
+      }
+      }
+
+      userprofile1.completeTrainingmethod();
