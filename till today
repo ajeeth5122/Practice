@@ -659,6 +659,7 @@
 
         console.clear();
 
+
       //1: What is the output of console.log(Math.abs(-450))?
 
       let a1= -450;
@@ -808,3 +809,5 @@
       let value = `0${today.getDate()}/${arr3[today.getMonth()]}/${today.getFullYear()}`;
 
       console.log(value)
+
+        
