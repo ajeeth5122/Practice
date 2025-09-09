@@ -655,3 +655,156 @@
       }
 
       userprofile1.completeTrainingmethod();
+
+
+        console.clear();
+
+      //1: What is the output of console.log(Math.abs(-450))?
+
+      let a1= -450;
+
+      console.log(Math.abs(a1)); //output = 450
+      
+
+      // If let num =-72.5, what will Math.abs(num) return?
+
+      // let a2=(a)=> {
+      //   return Math.abs(a)
+      // }
+
+      // let num = a2(-72.5)
+
+      // console.log(num);
+     
+      let num = -72.5;
+
+      console.log (Math.abs(num)) // output = 72.5
+
+      //What does Math.sign(-1234) return?
+
+      let a3 = -1234
+
+      console.log(Math.sign(a3));
+
+      //Determine the output of console.log(Math.sign(0)) and explain what it 
+      //indicates.
+
+      let a4= 0;
+      console.log(Math.sign(a4));
+
+      // math.sign method returns the value to least whether it is positive r negative except Zero.
+      
+      //Calculate the square root of 625 using Math.sqrt()
+
+      let a5 = 625;
+
+      console.log(Math.sqrt(a5))  // output = 25
+
+      //What is the result of Math.sqrt(50) rounded to two decimal places?
+
+      let a6 = 50
+
+      console.log(Math.sqrt(a6).toFixed(2))  // output = 7.07
+
+      //Find the cube root of 27 using Math.cbrt()
+
+      let a7 = 27
+
+      console.log(Math.cbrt(a7)) // output = 3
+
+      //What will Math.cbrt(-64) return?
+
+      let a8 = -64
+
+      console.log(Math.cbrt(a8)) //output = -4
+
+
+      //Compute 4^5 using Math.pow().
+
+      let a9 = 4;
+
+      console.log(Math.pow(a9,5)) // output = 1024
+
+      //Write a statement to calculate 7^2 using Math.pow()
+
+      let b1 = 49
+
+  
+      if (b1== Math.pow(7,2)){
+        console.log("success")
+      } else{
+        console.log("failed")
+      }
+      
+      //Given the array let arr = [45, 12, 89, 3, 67],
+      //what is the output of Math.min(...arr)?
+
+      let arr1 =[45,12,89,3,67]
+
+      console.log(Math.min(...arr1)); //output=3
+
+      //Using the samearray [45, 12, 89, 3, 67], 
+      //find the maximum value with Math.max()
+
+      console.log(Math.max(...arr1)); // output = 89
+
+      //Write a statement to generate a random number 
+      //between 0 and 50 using Math.random()
+
+      console.log(Math.random()*50)
+
+      // How would you generate a random integer between 1 and 10 using Math.random()
+      // and Math.floor()?
+
+      console.log(Math.floor(Math.random()*10))
+
+      // If let val = 6.789, what is the output of val.toFixed(2)?
+
+      let Val= 6.789
+
+      console.log(Val.toFixed(2)); //output 6.79
+
+      // For let num = 3.14159, what does Math.ceil(num) return?
+
+      let num5 = 3.14159
+
+      console.log(Math.ceil(num5)); //output=4
+
+      // Using let num = 8.76, what is the result of Math.floor(num)?
+
+      let num6 = 8.76
+
+      console.log(Math.floor(num6)); //output = 8
+
+      //What will Math.round(4.49) output?
+
+      console.log(Math.round(4.49)) // ouput = 4
+      
+      
+      //If let num = 9.999, what does Math.trunc(num) return?
+
+      let num7 = 9.999
+      console.log(Math.trunc(9.999)) // ouput = 9
+
+      // Create a Date object for the current date and time, and write the statement to
+      // display the full year using getFullYear()
+
+      let today = new Date()
+
+      console.log(today);
+      console.log(today.getFullYear());
+      console.log(today.getDate(),today.getHours());
+      console.log(today.getHours(),today.getMinutes(),today.getMilliseconds());
+      console.log(today.getMonth())
+
+      //Write a JavaScript statement to format the current date as DD/MMM/YYYY, where
+      // DD is the day, MMM is the three-letter month abbreviation (e.g., Jan, Feb), and YYYY
+      // is the year. Use an array of month names like in the provided code.
+
+      
+      let arr3 = ["jan","feb","mar","apr","may","june","july","aug","sep","oct"
+       ,"nov","dec"]
+      
+      let value = `0${today.getDate()}/${arr3[today.getMonth()]}/${today.getFullYear()}`;
+
+      console.log(value)
